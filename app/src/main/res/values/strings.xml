@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SGPA</string>
+    <string name="MAT31">21MAT31</string>
+    <string name="CS32">21CS32 </string>
+    <string name="CS33">21CS33</string>
+    <string name="CS34">21CS34</string>
+    <string name="CSL35">21CSL35</string>
+    <string name="UH36">21UH36</string>
+    <string name="KBK37">21KBK37/21KSK37</string>
+    <string name="CS381">21CS381</string>
+    <string name="sgpa">SGPA CALCULATOR</string>
+    <string name="button">RESULT</string>
+    <string name="total">Total</string>
+</resources>
