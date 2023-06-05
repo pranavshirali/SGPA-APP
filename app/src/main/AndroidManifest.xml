@@ -13,7 +13,11 @@
         android:theme="@style/Theme.SGPA"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity_4cse21"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".OptionScreen"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -22,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity_3cse21"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

@@ -1,14 +1,68 @@
 <resources>
     <string name="app_name">SGPA</string>
     <string name="MAT31">21MAT31</string>
-    <string name="CS32">21CS32 </string>
-    <string name="CS33">21CS33</string>
-    <string name="CS34">21CS34</string>
-    <string name="CSL35">21CSL35</string>
-    <string name="UH36">21UH36</string>
-    <string name="KBK37">21KBK37/21KSK37</string>
-    <string name="CS381">21CS381</string>
+    <string name="CS32">21**32 </string>
+    <string name="CS33">21**33</string>
+    <string name="CS34">21**34</string>
+    <string name="CSL35">21**35</string>
+    <string name="UH36">21**36</string>
+    <string name="KBK37">21KBK37/21KSK37/21CIP37</string>
+    <string name="CS381">21**381</string>
     <string name="sgpa">SGPA CALCULATOR</string>
+    <string name="CS">Compute Science Calculator</string>
     <string name="button">RESULT</string>
     <string name="total">Total</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="field1_options">
+        <item>Select Scheme</item>
+        <item>2018 Scheme</item>
+        <item>2021 Scheme</item>
+        <item>2022 Scheme</item>
+    </string-array>
+
+    <string-array name="field2_options">
+        <item>Select Branch</item>
+        <item>Physics Cycle</item>
+        <item>Chemistry Cycle</item>
+        <item>Aeronautical</item>
+        <item>AIML</item>
+        <item>Computer Science</item>
+        <item>Civil</item>
+        <item>CS-IOT</item>
+        <item>CS-AIML</item>
+        <item>Electronics and Communication</item>
+        <item>Mechectronics</item>
+        <item>Mechanical</item>
+        <item>Information Science</item>
+        <!-- Add more options -->
+    </string-array>
+
+    <string-array name="field3_options">
+        <item>Select Semester</item>
+        <item>SEM 1</item>
+        <item>SEM 2</item>
+        <item>SEM 3</item>
+        <item>SEM 4</item>
+        <item>SEM 5</item>
+        <item>SEM 6</item>
+        <item>SEM 7</item>
+        <item>SEM 8</item>
+        <!-- Add more options -->
+    </string-array>
+
+    <string name="scheme_prompt">Select Scheme</string>
+    <string name="branch_prompt">Select Branch</string>
+    <string name="semester_prompt">Select Semester</string>
+
+    <string name="CS41">21MAT41</string>
+    <string name="CS42">21**42</string>
+    <string name="CS43">21**43</string>
+    <string name="CS44">21**44</string>
+    <string name="CS45">21**45</string>
+    <string name="CS46">21**46</string>
+    <string name="KBK47">21KSK37/21KBK37/21CIP37</string>
+    <string name="CS481">21**481</string>
+    <string name="CS49">21UH49</string>
+
 </resources>

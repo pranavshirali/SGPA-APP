@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionScreen"
+    android:backgroundTint="#d3c1b1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="@string/sgpa"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/field1Spinner"
+        android:layout_width="300dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:autofillHints="Scheme"
+        android:background="@drawable/edittext_border"
+        android:entries="@array/field1_options"
+        android:prompt="@string/scheme_prompt"
+        android:spinnerMode="dropdown"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/field2Spinner"
+        android:layout_width="303dp"
+        android:layout_height="66dp"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/branch_prompt"
+        android:entries="@array/field2_options"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_border"/>
+
+    <Spinner
+        android:id="@+id/field3Spinner"
+        android:layout_width="302dp"
+        android:layout_height="67dp"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/semester_prompt"
+        android:entries="@array/field3_options"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_border"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/submit" />
+
+</LinearLayout>
