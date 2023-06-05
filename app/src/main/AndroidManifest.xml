@@ -13,7 +13,7 @@
         android:theme="@style/Theme.SGPA"
         tools:targetApi="31">
         <activity
-            android:name=".activity_4cse21"
+            android:name=".activity_4it21"
             android:exported="false"
             android:theme="@style/AppTheme"/>
         <activity
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity_3cse21"
+            android:name=".activity_3it21"
             android:exported="true"
             android:theme="@style/AppTheme" />
     </application>

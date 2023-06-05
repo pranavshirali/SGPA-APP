@@ -36,15 +36,15 @@ public class OptionScreen extends AppCompatActivity {
 
                 // Check if the selected options match the desired values
                 if (option1.equals("2021 Scheme") &&
-                        (option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("CS-IOT") || option2.equals("Information Science")) &&
+                        (option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science")) &&
                         option3.equals("SEM 3")) {
                     // Redirect to the SGPA calculation view
-                    Intent intent = new Intent(OptionScreen.this, activity_3cse21.class);
+                    Intent intent = new Intent(OptionScreen.this, activity_3it21.class);
                     startActivity(intent);
                 } else if (option1.equals("2021 Scheme") &&
-                        (option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("CS-IOT") || option2.equals("Information Science")) &&
+                        (option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science")) &&
                         option3.equals("SEM 4")) {
-                    Intent intent = new Intent(OptionScreen.this, activity_4cse21.class);
+                    Intent intent = new Intent(OptionScreen.this, activity_4it21.class);
                     startActivity(intent);
                 } else {
                     // Display a message indicating that the selected options are not valid
