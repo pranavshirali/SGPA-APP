@@ -46,6 +46,11 @@ public class OptionScreen extends AppCompatActivity {
                         option3.equals("SEM 4")) {
                     Intent intent = new Intent(OptionScreen.this, activity_4it21.class);
                     startActivity(intent);
+                } else if (option1.equals("2021 Scheme") &&
+                        option2.equals("Aeronautical") &&
+                        option3.equals("SEM 3")) {
+                    Intent intent = new Intent(OptionScreen.this, activity_3it21.class);
+                    startActivity(intent);
                 } else {
                     // Display a message indicating that the selected options are not valid
                     Toast.makeText(OptionScreen.this, "Please select the correct options", Toast.LENGTH_SHORT).show();

@@ -13,6 +13,7 @@
     <string name="button">RESULT</string>
     <string name="total">Total</string>
     <string name="submit">Submit</string>
+    <string name="INT49">21INT49</string>
 
     <string-array name="field1_options">
         <item>Select Scheme</item>
@@ -60,8 +61,15 @@
     <string name="CS44">21**44</string>
     <string name="CS45">21**45</string>
     <string name="CS46">21**46</string>
-    <string name="KBK47">21KSK37/21KBK37/21CIP37</string>
+    <string name="KBK47">21KSK47/21KBK47/21CIP47</string>
     <string name="CS481">21**481</string>
     <string name="CS49">21UH49</string>
+    
+    <string name="AE32">21AE32</string>
+    <string name="AE33">21AE33</string>
+    <string name="AE34">21AE34</string>
+    <string name="AE35">21AE35</string>
+    <string name="AE36">21AE36</string>
+    <string name="AE381">21AE381</string>
 
 </resources>

@@ -15,7 +15,7 @@
         <activity
             android:name=".activity_4it21"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".OptionScreen"
             android:exported="true"
