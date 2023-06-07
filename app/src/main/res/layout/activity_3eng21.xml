@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#d3c1b1"
         android:orientation="vertical"
-        tools:context=".activity_3eng21"
+        tools:context=".OptionScreen$activity_3eng21"
         tools:ignore="ExtraText">
 
         <TextView
@@ -70,7 +70,7 @@
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#A1887F" />
+            android:textColorHint="#8D6E63" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal4"
@@ -115,7 +115,7 @@
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#A1887F" />
+            android:textColorHint="#8D6E63" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal7"

@@ -13,9 +13,25 @@
         android:theme="@style/Theme.SGPA"
         tools:targetApi="31">
         <activity
-            android:name=".activity_8eng21"
+            android:name=".activity_8eng18"
             android:exported="false"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity_7eng18"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity_6eng18"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity_5eng18"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity_8eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".activity_7eng21"
             android:exported="false"

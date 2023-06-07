@@ -73,6 +73,9 @@
     <string name="sub56">21**56</string>
     <string name="sub57">21**57</string>
     <string name="sub58">21**58X</string>
+    <string name="sub59">21**59</string>
+    <string name="subL57">21**L57</string>
+    <string name="subL58">21**L58</string>
 
     <string name="sub61">21**61</string>
     <string name="sub62">21**62 </string>
@@ -93,5 +96,15 @@
     <string name="sub81">21**81</string>
     <string name="sub82">21INT82 </string>
     <string name="sub83">21**83</string>
+
+    <string name="sub1851">18**51 </string>
+    <string name="sub1852">18**52 </string>
+    <string name="sub1853">18**53 </string>
+    <string name="sub1854">18**54 </string>
+    <string name="sub1855">18**55 </string>
+    <string name="sub1856">18**56 </string>
+    <string name="sub1857">18**57L </string>
+    <string name="sub1858">18**58L </string>
+    <string name="sub1859">18**59 </string>
 
 </resources>
