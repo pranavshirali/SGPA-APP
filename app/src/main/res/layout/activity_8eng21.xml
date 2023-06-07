@@ -36,7 +36,7 @@
             android:background="@drawable/edittext_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/MAT31"
+            android:hint="@string/sub81"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
@@ -51,7 +51,7 @@
             android:background="@drawable/edittext_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/CS32"
+            android:hint="@string/sub82"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
@@ -66,91 +66,17 @@
             android:background="@drawable/edittext_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/CS33"
+            android:hint="@string/sub83"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            android:textColorHint="#A1887F" />
 
-        <EditText
-            android:id="@+id/editTextNumberDecimal4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edittext_border"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/CS34"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
-
-        <EditText
-            android:id="@+id/editTextNumberDecimal5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edittext_border"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/CSL35"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
-
-        <EditText
-            android:id="@+id/editTextNumberDecimal6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edittext_border"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/UH36"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
-
-        <EditText
-            android:id="@+id/editTextNumberDecimal7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edittext_border"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/KBK37"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
-
-        <EditText
-            android:id="@+id/editTextNumberDecimal8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edittext_border"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/CS381"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
 
         <!-- End of updated EditText views -->
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -160,7 +86,7 @@
             android:textColor="#212121" />
 
         <TextView
-            android:id="@+id/resultview"
+            android:id="@+id/resultview6"
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"

@@ -13,14 +13,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.text.DecimalFormat;
 
-public class activity_3it21 extends AppCompatActivity {
+public class activity_3eng21 extends AppCompatActivity {
     EditText m31 ,m32, m33, m34, m35, m36, m37, m381;
     TextView result;
     Button show;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_3it21);
+        setContentView(R.layout.activity_3eng21);
 
         m31 = findViewById(R.id.editTextNumberDecimal);
         m32 = findViewById(R.id.editTextNumberDecimal2);
@@ -30,19 +30,19 @@ public class activity_3it21 extends AppCompatActivity {
         m36 = findViewById(R.id.editTextNumberDecimal6);
         m37 = findViewById(R.id.editTextNumberDecimal7);
         m381 = findViewById(R.id.editTextNumberDecimal8);
-        result = findViewById(R.id.resultview);
-        show = findViewById(R.id.button);
+        result = findViewById(R.id.resultview3);
+        show = findViewById(R.id.button3);
         show.setOnClickListener(v -> {
             calculate();
             try {
                 if (validateFields()) {
                     hideKeyboard();
                 } else {
-                    Toast.makeText(activity_3it21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity_3eng21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 }
             }
             catch (NumberFormatException e) {
-                Toast.makeText(activity_3it21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity_3eng21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -87,10 +87,10 @@ public class activity_3it21 extends AppCompatActivity {
 
                 result.setText("SGPA : " + formattedTotal);
             } else {
-                Toast.makeText(activity_3it21.this, "Please enter valid marks (0-100)", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity_3eng21.this, "Please enter valid marks (0-100)", Toast.LENGTH_SHORT).show();
             }
         } catch (NumberFormatException e) {
-            Toast.makeText(activity_3it21.this, "Please enter valid numeric values", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity_3eng21.this, "Please enter valid numeric values", Toast.LENGTH_SHORT).show();
             Log.e("NumberFormatException", e.getMessage());
         }
     }

@@ -13,7 +13,23 @@
         android:theme="@style/Theme.SGPA"
         tools:targetApi="31">
         <activity
-            android:name=".activity_4it21"
+            android:name=".activity_8eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity_7eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity_6eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity_5eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity_4eng21"
             android:exported="false"
             android:theme="@style/AppTheme" />
         <activity
@@ -27,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity_3it21"
+            android:name=".activity_3eng21"
             android:exported="true"
             android:theme="@style/AppTheme" />
     </application>

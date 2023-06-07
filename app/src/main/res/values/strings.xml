@@ -4,10 +4,10 @@
     <string name="CS32">21**32 </string>
     <string name="CS33">21**33</string>
     <string name="CS34">21**34</string>
-    <string name="CSL35">21**35</string>
+    <string name="CSL35">21**L35</string>
     <string name="UH36">21**36</string>
     <string name="KBK37">21KBK37/21KSK37/21CIP37</string>
-    <string name="CS381">21**381</string>
+    <string name="CS381">21**38X</string>
     <string name="sgpa">SGPA CALCULATOR</string>
     <string name="CS">Compute Science Calculator</string>
     <string name="button">RESULT</string>
@@ -60,16 +60,38 @@
     <string name="CS43">21**43</string>
     <string name="CS44">21**44</string>
     <string name="CS45">21**45</string>
-    <string name="CS46">21**46</string>
+    <string name="CS46">21**L46</string>
     <string name="KBK47">21KSK47/21KBK47/21CIP47</string>
-    <string name="CS481">21**481</string>
+    <string name="CS481">21**48X</string>
     <string name="CS49">21UH49</string>
-    
-    <string name="AE32">21AE32</string>
-    <string name="AE33">21AE33</string>
-    <string name="AE34">21AE34</string>
-    <string name="AE35">21AE35</string>
-    <string name="AE36">21AE36</string>
-    <string name="AE381">21AE381</string>
+
+    <string name="sub51">21**51</string>
+    <string name="sub52">21**52 </string>
+    <string name="sub53">21**53</string>
+    <string name="sub54">21**54</string>
+    <string name="sub55">21**L55</string>
+    <string name="sub56">21**56</string>
+    <string name="sub57">21**57</string>
+    <string name="sub58">21**58X</string>
+
+    <string name="sub61">21**61</string>
+    <string name="sub62">21**62 </string>
+    <string name="sub63">21**63</string>
+    <string name="sub64">21**64X</string>
+    <string name="sub65">21**65X</string>
+    <string name="sub66">21**L66</string>
+    <string name="sub67">21**67</string>
+    <string name="sub68">21INT68</string>
+
+    <string name="sub71">21**71</string>
+    <string name="sub72">21**72 </string>
+    <string name="sub73">21**73X</string>
+    <string name="sub74">21**74X</string>
+    <string name="sub75">21**75X</string>
+    <string name="sub76">21**P76</string>
+
+    <string name="sub81">21**81</string>
+    <string name="sub82">21INT82 </string>
+    <string name="sub83">21**83</string>
 
 </resources>
