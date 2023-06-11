@@ -35,6 +35,8 @@ public class OptionScreen extends AppCompatActivity {
             boolean b = option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science") ||
                     option2.equals("Aeronautical") || option2.equals("Civil") || option2.equals("Electronics and Communication") ||
                     option2.equals("Mechatronics") || option2.equals("Mechanical");
+
+
             if (option1.equals("2021 Scheme")){
                         if(b && option3.equals("SEM 3")){
                     Intent intent = new Intent(OptionScreen.this, activity_3eng21.class);
@@ -58,9 +60,8 @@ public class OptionScreen extends AppCompatActivity {
             }
 
             if (option1.equals("2018 Scheme")){
-                        if(b && option3.equals("SEM 5")){
+                if(b && option3.equals("SEM 5")){
                     Intent intent = new Intent(OptionScreen.this, activity_5eng18.class);
-                    intent.putExtra("Aeronautical", option2);
                     startActivity(intent);
                 } else if (b && option3.equals("SEM 6")) {
                     Intent intent = new Intent(OptionScreen.this, activity_6eng18.class);
@@ -74,14 +75,6 @@ public class OptionScreen extends AppCompatActivity {
                 }
             }
 
-
-
-
-
-            else {
-                // Display a message indicating that the selected options are not valid
-                Toast.makeText(OptionScreen.this, "Please select the correct options", Toast.LENGTH_SHORT).show();
-            }
         });
     }
 }

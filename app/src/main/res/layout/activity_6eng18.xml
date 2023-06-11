@@ -37,7 +37,7 @@
             android:background="@drawable/edittext_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="@string/sub1851"
+            android:hint="@string/sub1861"
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"

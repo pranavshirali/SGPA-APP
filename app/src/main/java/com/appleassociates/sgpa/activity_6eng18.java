@@ -26,7 +26,7 @@ public class activity_6eng18 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_6eng18);
 
-        String option2 = getIntent().getStringExtra("Aeronautical");
+
         btn61 = findViewById(R.id.editTextNumberDecimal);
         btn62 = findViewById(R.id.editTextNumberDecimal2);
         btn63 = findViewById(R.id.editTextNumberDecimal3);
@@ -48,13 +48,13 @@ public class activity_6eng18 extends AppCompatActivity {
             catch (NumberFormatException e) {
                 Toast.makeText(activity_6eng18.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
             }
-            calculate(option2);
+            calculate();
 
         });
     }
 
     @SuppressLint("SetTextI18n")
-    private void calculate(String option2) {
+    private void calculate() {
         try {
             int m61 = Integer.parseInt(btn61.getText().toString());
             int m62 = Integer.parseInt(btn62.getText().toString());

@@ -130,9 +130,9 @@ public class activity_5eng18 extends AppCompatActivity {
         // Define the credit points for each subject
         int m51Credits = 3;
         int m52Credits = 4;
-        int m44Credits= 3;
+        int m44Credits = 3;
         int m55Credits = 3;
-        int m56Credits= 3;
+        int m56Credits = 3;
         int m57Credits = 2;
         int m58Credits = 2;
         int m59Credits = 1;
