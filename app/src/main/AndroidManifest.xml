@@ -13,9 +13,13 @@
         android:theme="@style/Theme.SGPA"
         tools:targetApi="31">
         <activity
-            android:name=".activity_2eng22"
+            android:name=".activity_7itonly18"
             android:exported="false"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity_2eng22"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".activity_1eng22"
             android:exported="false"

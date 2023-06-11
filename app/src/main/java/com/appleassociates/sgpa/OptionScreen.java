@@ -32,28 +32,32 @@ public class OptionScreen extends AppCompatActivity {
             String option3 = field3Spinner.getSelectedItem().toString();
 
             //  LOGIC FOR 3RD SEM 2021 SCHEME
-            boolean b = option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science") ||
+            boolean juniors = option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science") ||
                     option2.equals("Aeronautical") || option2.equals("Civil") || option2.equals("Electronics and Communication") ||
                     option2.equals("Mechatronics") || option2.equals("Mechanical") || option2.equals("Computer Science(AIML)") || option2.equals("Computer Science(IoT)");
 
+            boolean seniors = option2.equals("IOT") || option2.equals("Aeronautical") || option2.equals("Civil") || option2.equals("Electronics and Communication") ||
+                    option2.equals("Mechatronics") || option2.equals("Mechanical");
+
+            boolean seniors2 = option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("Information Science");
 
             if (option1.equals("2021 Scheme")){
-                if(b && option3.equals("SEM 3")){
+                if(seniors && option3.equals("SEM 3")){
                     Intent intent = new Intent(OptionScreen.this, activity_3eng21.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 4")) {
+                } else if(seniors && option3.equals("SEM 4")) {
                     Intent intent = new Intent(OptionScreen.this, activity_4eng21.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 5")) {
+                } else if (seniors && option3.equals("SEM 5")) {
                     Intent intent = new Intent(OptionScreen.this, activity_5eng21.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 6")) {
+                } else if (seniors&& option3.equals("SEM 6")) {
                     Intent intent = new Intent(OptionScreen.this, activity_6eng21.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 7")) {
+                } else if (seniors&& option3.equals("SEM 7")) {
                     Intent intent = new Intent(OptionScreen.this, activity_7eng21.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 8")) {
+                } else if (seniors && option3.equals("SEM 8")) {
                     Intent intent = new Intent(OptionScreen.this, activity_8eng21.class);
                     startActivity(intent);
                 } else {
@@ -62,16 +66,21 @@ public class OptionScreen extends AppCompatActivity {
             }
 
             if (option1.equals("2018 Scheme")){
-                if(b && option3.equals("SEM 5")){
+                if(seniors && option3.equals("SEM 5")){
                     Intent intent = new Intent(OptionScreen.this, activity_5eng18.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 6")) {
+                } else if (seniors && option3.equals("SEM 6")) {
                     Intent intent = new Intent(OptionScreen.this, activity_6eng18.class);
                     startActivity(intent);
-                } else if (b && option3.equals("SEM 7")) {
-                    Intent intent = new Intent(OptionScreen.this, activity_7eng18.class);
-                    startActivity(intent);
-                } else if (b && option3.equals("SEM 8")) {
+                } else if (option3.equals("SEM 7")) {
+                    if(seniors){
+                        Intent intent = new Intent(OptionScreen.this, activity_7eng18.class);
+                        startActivity(intent);
+                    } else if (seniors2) {
+                        Intent intent = new Intent(OptionScreen.this, activity_7itonly18.class);
+                        startActivity(intent);
+                    }
+                } else if (seniors && option3.equals("SEM 8")) {
                     Intent intent = new Intent(OptionScreen.this, activity_8eng18.class);
                     startActivity(intent);
                 } else {
@@ -80,13 +89,16 @@ public class OptionScreen extends AppCompatActivity {
             }
 
             if(option1.equals("2022 Scheme")){
-                if(b && option3.equals("SEM 1")){
+                if(juniors && option3.equals("SEM 1")){
                     Intent intent = new Intent(OptionScreen.this, activity_1eng22.class);
                     startActivity(intent);
-                } else if(b && option3.equals("SEM 2")){
+                } else if(juniors && option3.equals("SEM 2")){
                     Intent intent = new Intent(OptionScreen.this, activity_2eng22.class);
                     startActivity(intent);
-                } else {
+                } else if(juniors && option3.equals("SEM 3")){
+                    Intent intent = new Intent(OptionScreen.this, activity_2eng22.class);
+                    startActivity(intent);
+                }else {
                     Toast.makeText(OptionScreen.this, "Selected Option isn't available", Toast.LENGTH_SHORT).show();
                 }
             }
