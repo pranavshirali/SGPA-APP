@@ -24,8 +24,6 @@
 
     <string-array name="field2_options">
         <item>Select Branch</item>
-        <item>Physics Cycle</item>
-        <item>Chemistry Cycle</item>
         <item>Aeronautical</item>
         <item>AIML</item>
         <item>Computer Science</item>
@@ -35,6 +33,8 @@
         <item>Mechatronics</item>
         <item>Mechanical</item>
         <item>Information Science</item>
+        <item>Computer Science(AIML)</item>
+        <item>Computer Science(IoT)</item>
         <!-- Add more options -->
     </string-array>
 
@@ -130,5 +130,23 @@
     <string name="sub1883">18**P83 </string>
     <string name="sub1884">18**S84 </string>
     <string name="sub1885">18**I85 </string>
+
+    <string name="sub20101">22**101 </string>
+    <string name="sub20102">22**102 </string>
+    <string name="sub20103">22**103 </string>
+    <string name="sub20104">22**104X</string>
+    <string name="sub20105">22**105X </string>
+    <string name="sub20106">22**106 </string>
+    <string name="sub20107">22**107 </string>
+    <string name="sub20108">22**158 </string>
+
+    <string name="sub20201">22**201 </string>
+    <string name="sub20202">22**202 </string>
+    <string name="sub20203">22**203 </string>
+    <string name="sub20204">22**204X</string>
+    <string name="sub20205">22**205X </string>
+    <string name="sub20206">22**206 </string>
+    <string name="sub20207">22**207 </string>
+    <string name="sub20208">22**258 </string>
 
 </resources>
