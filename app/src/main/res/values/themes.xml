@@ -1,9 +1,12 @@
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="android:navigationBarColor">@color/background</item>
-        <item name="colorPrimaryVariant">@color/background</item>
-        <item name="colorPrimary">@color/background</item>
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/theme</item>
+        <item name="colorPrimaryVariant">@color/theme</item>
+        <item name="backgroundColor">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorPrimary">@color/theme</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="buttonBackground">@color/theme</item>
     </style>
 </resources>
