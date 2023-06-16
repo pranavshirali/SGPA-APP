@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".OptionScreen$activity_3eng21"
+        tools:context=".activity_1eng22"
         tools:ignore="ExtraText">
 
         <TextView

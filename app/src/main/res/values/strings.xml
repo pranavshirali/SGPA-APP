@@ -1,4 +1,5 @@
 <resources>
+    <string name="selected_option"> </string>
     <string name="result">RESULT</string>
     <string name="app_name">SGPA</string>
     <string name="MAT31">21MAT31</string>

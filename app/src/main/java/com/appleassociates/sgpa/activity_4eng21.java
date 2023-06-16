@@ -2,6 +2,7 @@ package com.appleassociates.sgpa;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,8 +18,9 @@ import java.text.DecimalFormat;
 public class activity_4eng21 extends AppCompatActivity {
 
     EditText btn41 ,btn42, btn43, btn44, btn45, btn46, btn47, btn48, btn49, btn10;
-    TextView result4;
+    TextView result4, startingTextView;
     Button show4;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +37,12 @@ public class activity_4eng21 extends AppCompatActivity {
         btn49 = findViewById(R.id.editTextNumberDecimal9);
         btn10 = findViewById(R.id.editTextNumberDecimal10);
         result4 = findViewById(R.id.resultview4);
+        startingTextView = findViewById(R.id.textView);
         show4 = findViewById(R.id.button4);
+
+        Intent intent = getIntent();
+        String selectedOption = intent.getStringExtra("selectedOption");
+        startingTextView.setText("2021 SCHEME / 4TH SEM / " + getString(R.string.selected_option) + selectedOption);
         show4.setOnClickListener(v -> {
             try {
                 if (validateFields()) {

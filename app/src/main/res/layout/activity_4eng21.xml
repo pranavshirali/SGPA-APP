@@ -9,174 +9,137 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#d3c1b1"
         android:orientation="vertical"
-        tools:context=".OptionScreen$activity_3eng21"
+        tools:context=".activity_3eng21"
         tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="287dp"
+            style="@style/editText"
+            android:layout_width="382dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="@string/sgpa"
-            android:textSize="30sp"
+            android:gravity="start"
+            android:text="@string/selected_option"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             android:textStyle="bold"
-            tools:ignore="TextSizeCheck"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:ignore="TextSizeCheck" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS41"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS42"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS43"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#A1887F" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS44"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS45"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/CS46"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#A1887F" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal7"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/KBK47"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
+
             android:gravity="center"
             android:hint="@string/CS481"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
+
             android:gravity="center"
             android:hint="@string/CS49"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#8D6E63" />
+            style="@style/editText"/>
 
         <EditText
             android:id="@+id/editTextNumberDecimal10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/INT49"
             android:importantForAutofill="no"
-            android:inputType="number"
             android:minHeight="48dp"
-            android:textColorHint="#A1887F" />
+            style="@style/editText"/>
 
         <!-- End of updated EditText views -->
 
@@ -186,9 +149,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
-            android:backgroundTint="#A1887F"
             android:text="@string/button"
-            android:textColor="#212121" />
+            style="@style/SubmitButton"/>
 
         <TextView
             android:id="@+id/resultview4"

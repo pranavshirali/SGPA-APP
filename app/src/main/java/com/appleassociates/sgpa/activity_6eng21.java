@@ -2,6 +2,7 @@ package com.appleassociates.sgpa;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,13 +17,15 @@ import java.text.DecimalFormat;
 
 public class activity_6eng21 extends AppCompatActivity {
 
-    EditText btn61 ,btn62, btn63, btn64, btn65, btn66, btn7, btn68;
-    TextView result6;
+    EditText btn61 ,btn62, btn63, btn64, btn65, btn66, btn67, btn68;
+    TextView result6, startingTextView;
     Button show;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_6eng21);
+
 
         btn61 = findViewById(R.id.editTextNumberDecimal);
         btn62 = findViewById(R.id.editTextNumberDecimal2);
@@ -30,10 +33,18 @@ public class activity_6eng21 extends AppCompatActivity {
         btn64 = findViewById(R.id.editTextNumberDecimal4);
         btn65 = findViewById(R.id.editTextNumberDecimal5);
         btn66 = findViewById(R.id.editTextNumberDecimal6);
-        btn7 = findViewById(R.id.editTextNumberDecimal7);
+        btn67 = findViewById(R.id.editTextNumberDecimal7);
         btn68 = findViewById(R.id.editTextNumberDecimal8);
+        startingTextView = findViewById(R.id.textView);
         show = findViewById(R.id.button6);
         result6 = findViewById(R.id.resultview6);
+
+        Intent intent = getIntent();
+        String selectedOption = intent.getStringExtra("selectedOption");
+        startingTextView.setText(getString(R.string.selected_option) + selectedOption);
+
+
+        startingTextView.setText(selectedOption);
         show.setOnClickListener(v -> {
             calculate();
             try {
@@ -58,7 +69,7 @@ public class activity_6eng21 extends AppCompatActivity {
             int m64 = Integer.parseInt(btn64.getText().toString());
             int m65 = Integer.parseInt(btn65.getText().toString());
             int m66 = Integer.parseInt(btn66.getText().toString());
-            int m67 = Integer.parseInt(btn7.getText().toString());
+            int m67 = Integer.parseInt(btn67.getText().toString());
             int m68 = Integer.parseInt(btn68.getText().toString());
 
             if (m61 >= 0 && m61 <= 100 &&
@@ -123,11 +134,11 @@ public class activity_6eng21 extends AppCompatActivity {
         int m61Credits = 3;
         int m62Credits = 4;
         int m63Credits = 3;
-        int m64Credits= 3;
+        int m64Credits = 3;
         int m65Credits = 3;
-        int m66Credits= 1;
+        int m66Credits = 1;
         int m67Credits = 2;
-        int m68Credits = 2;
+        int m68Credits = 3;
 
         // Calculate the credit points for each subject
         int m61CP = m61Credits * m61Grade;
@@ -166,7 +177,7 @@ public class activity_6eng21 extends AppCompatActivity {
                 !btn64.getText().toString().isEmpty() &&
                 !btn65.getText().toString().isEmpty() &&
                 !btn66.getText().toString().isEmpty() &&
-                !btn7.getText().toString().isEmpty() &&
+                !btn67.getText().toString().isEmpty() &&
                 !btn68.getText().toString().isEmpty();
     }
 }
