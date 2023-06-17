@@ -4,7 +4,7 @@
         <item name="android:navigationBarColor">@color/theme</item>
         <item name="colorPrimaryVariant">@color/theme</item>
         <item name="backgroundColor">@color/white</item>
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@color/leightWhite</item>
         <item name="colorPrimary">@color/theme</item>
         <item name="fontFamily">@font/montserrat</item>
     </style>
