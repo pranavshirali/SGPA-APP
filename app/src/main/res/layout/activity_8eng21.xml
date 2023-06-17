@@ -79,11 +79,10 @@
             android:ems="5"
             android:gravity="center"
             android:hint="@string/total"
-            android:textColor="#000000"
-            android:textColorHint="#A1887F"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            style="@style/editText"/>
 
 
     </LinearLayout>

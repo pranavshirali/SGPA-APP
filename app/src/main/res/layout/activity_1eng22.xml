@@ -14,28 +14,24 @@
         <TextView
             android:id="@+id/textView"
             style="@style/editText"
-            android:layout_width="287dp"
+            android:layout_width="403dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="@string/sgpa"
-            android:textSize="30sp"
+            android:gravity="start"
+            android:text="@string/selected_option"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             android:textStyle="bold"
-            tools:ignore="TextSizeCheck"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:ignore="TextSizeCheck" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20101"
             android:importantForAutofill="no"
@@ -44,13 +40,10 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
             android:baselineAligned="false"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20102"
             android:importantForAutofill="no"
@@ -59,12 +52,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20103"
             android:importantForAutofill="no"
@@ -73,12 +63,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20104"
             android:importantForAutofill="no"
@@ -87,12 +74,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20105"
             android:importantForAutofill="no"
@@ -101,12 +85,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20106"
             android:importantForAutofill="no"
@@ -115,12 +96,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal7"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20107"
             android:importantForAutofill="no"
@@ -129,12 +107,9 @@
 
         <EditText
             android:id="@+id/editTextNumberDecimal8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="10"
             android:gravity="center"
             android:hint="@string/sub20108"
             android:importantForAutofill="no"
@@ -144,26 +119,23 @@
         <!-- End of updated EditText views -->
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button1"
             style="@style/SubmitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
-            android:hint="@string/result"
             android:text="@string/button" />
 
         <TextView
-            android:id="@+id/resultview4"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
+            android:id="@+id/resultview1"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittext_border"
-            android:ems="5"
             android:gravity="center"
             android:hint="@string/total"
             android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="TextContrastCheck"
             style="@style/editText"/>
 

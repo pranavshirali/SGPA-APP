@@ -13,18 +13,18 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="287dp"
+            style="@style/editText"
+            android:layout_width="403dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/sgpa"
+            android:gravity="start"
+            android:text="@string/selected_option"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="12sp"
             android:textStyle="bold"
-            tools:ignore="TextSizeCheck"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:ignore="TextSizeCheck" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
@@ -52,7 +52,6 @@
             style="@style/editText"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-
             android:background="@drawable/edittext_border"
             android:hint="@string/sub1863"
             android:importantForAutofill="no"
@@ -63,7 +62,6 @@
             style="@style/editText"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-
             android:background="@drawable/edittext_border"
             android:hint="@string/sub1864"
             android:importantForAutofill="no"
@@ -112,7 +110,7 @@
         <!-- End of updated EditText views -->
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button6"
             style="@style/SubmitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,17 +119,16 @@
             android:text="@string/button" />
 
         <TextView
-            android:id="@+id/resultview4"
-            style="@style/editText"
-            android:layout_width="156dp"
-            android:layout_height="48dp"
+            android:id="@+id/resultview6"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittext_border"
+            android:gravity="center"
             android:hint="@string/total"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            style="@style/editText"/>
 
 
     </LinearLayout>

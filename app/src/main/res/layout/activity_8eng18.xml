@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#d3c1b1"
         android:orientation="vertical"
-        tools:context=".activity_8eng21"
+        tools:context=".activity_8eng18"
         tools:ignore="ExtraText">
 
         <TextView

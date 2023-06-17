@@ -41,7 +41,7 @@ public class activity_6eng21 extends AppCompatActivity {
 
         Intent intent = getIntent();
         String selectedOption = intent.getStringExtra("selectedOption");
-        startingTextView.setText(getString(R.string.selected_option) + selectedOption);
+        startingTextView.setText("2021 SCHEME / 6TH SEM / " + getString(R.string.selected_option) + selectedOption);
 
 
         startingTextView.setText(selectedOption);

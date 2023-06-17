@@ -93,20 +93,25 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         if (option1.equals("2018 Scheme")){
             if((seniors || seniors2) && option3.equals("SEM 5")){
                 Intent intent = new Intent(OptionScreen.this, activity_5eng18.class);
+                intent.putExtra("selectedOption", option2);
                 startActivity(intent);
             } else if ((seniors || seniors2) && option3.equals("SEM 6")) {
                 Intent intent = new Intent(OptionScreen.this, activity_6eng18.class);
+                intent.putExtra("selectedOption", option2);
                 startActivity(intent);
             } else if (option3.equals("SEM 7")) {
                 if(seniors){
                     Intent intent = new Intent(OptionScreen.this, activity_7eng18.class);
+                    intent.putExtra("selectedOption", option2);
                     startActivity(intent);
                 } else if (seniors2) {
                     Intent intent = new Intent(OptionScreen.this, activity_7itonly18.class);
+                    intent.putExtra("selectedOption", option2);
                     startActivity(intent);
                 }
             } else if ((seniors || seniors2) && option3.equals("SEM 8")) {
                 Intent intent = new Intent(OptionScreen.this, activity_8eng18.class);
+                intent.putExtra("selectedOption", option2);
                 startActivity(intent);
             } else {
                 Toast.makeText(OptionScreen.this, "Selected Option not allowed", Toast.LENGTH_SHORT).show();
@@ -116,9 +121,11 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         if(option1.equals("2022 Scheme")){
             if(juniors && option3.equals("SEM 1")){
                 Intent intent = new Intent(OptionScreen.this, activity_1eng22.class);
+                intent.putExtra("selectedOption", option2);
                 startActivity(intent);
             } else if(juniors && option3.equals("SEM 2")){
                 Intent intent = new Intent(OptionScreen.this, activity_2eng22.class);
+                intent.putExtra("selectedOption", option2);
                 startActivity(intent);
             } else if(juniors && option3.equals("SEM 3")){
                 Toast.makeText(OptionScreen.this, "Selected Option will be updated soon", Toast.LENGTH_SHORT).show();
