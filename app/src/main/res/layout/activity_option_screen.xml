@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".OptionScreen"
     tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="314dp"
-        android:layout_height="106dp"
+        android:layout_width="243dp"
+        android:layout_height="95dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="10dp"
@@ -29,9 +29,12 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/edittext_border"
+        android:layout_marginTop="10dp"
         android:textColorHint="@color/black"
-        android:layout_marginTop="10dp">
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
+        >
 
         <AutoCompleteTextView
             android:id="@+id/field1AutoComplete"
@@ -39,6 +42,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/scheme_prompt"
             android:inputType="none"
+            android:textSize="13sp"
+            android:textColor="@color/black"
             tools:ignore="TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -49,7 +54,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/edittext_border"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
         android:textColorHint="@color/black"
         android:layout_marginTop="25dp">
 
@@ -57,8 +64,9 @@
             android:id="@+id/field2AutoComplete"
             android:layout_width="300dp"
             android:layout_height="55dp"
-            android:background="@drawable/edittext_border"
             android:inputType="none"
+            android:textSize="13sp"
+            android:textColor="@color/black"
             android:hint="@string/branch_prompt" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -69,7 +77,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/edittext_border"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
         android:textColorHint="@color/black"
         android:layout_marginTop="25dp">
 
@@ -77,8 +87,9 @@
             android:id="@+id/field3AutoComplete"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_border"
             android:inputType="none"
+            android:textSize="13sp"
+            android:textColor="@color/black"
             android:hint="@string/semester_prompt" />
 
     </com.google.android.material.textfield.TextInputLayout>

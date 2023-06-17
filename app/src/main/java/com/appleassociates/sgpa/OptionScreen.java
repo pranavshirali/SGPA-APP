@@ -98,7 +98,7 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("selectedOption", option2);
             startActivity(intent);
         } else {
-            Toast.makeText(OptionScreen.this, "Selected Option not allowed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(OptionScreen.this, "Invalid Options", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -129,7 +129,7 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("selectedOption", option2);
             startActivity(intent);
         } else {
-            Toast.makeText(OptionScreen.this, "Selected Option not allowed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(OptionScreen.this, "Invalid Options", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -156,7 +156,7 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         } else if(juniors && option3.equals("SEM 8")){
             Toast.makeText(OptionScreen.this, "Selected Option will be updated soon", Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(OptionScreen.this, "Selected Option isn't available", Toast.LENGTH_SHORT).show();
+            Toast.makeText(OptionScreen.this, "Invalid Options", Toast.LENGTH_SHORT).show();
         }
     }
 

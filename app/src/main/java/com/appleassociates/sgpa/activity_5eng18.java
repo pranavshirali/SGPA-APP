@@ -28,7 +28,8 @@ public class activity_5eng18 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_5eng18);
 
-        String option2 = getIntent().getStringExtra("Aeronautical");
+        String option2 = getIntent().getStringExtra("selectedOption");
+
         btn51 = findViewById(R.id.editTextNumberDecimal);
         btn52 = findViewById(R.id.editTextNumberDecimal2);
         btn53 = findViewById(R.id.editTextNumberDecimal3);
