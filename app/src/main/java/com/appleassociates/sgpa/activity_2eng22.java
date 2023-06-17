@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.DecimalFormat;
 
 public class activity_2eng22 extends AppCompatActivity {

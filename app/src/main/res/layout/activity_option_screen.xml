@@ -36,9 +36,8 @@
 
         <AutoCompleteTextView
             android:id="@+id/field1AutoComplete"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-
             android:hint="@string/scheme_prompt"
             android:inputType="none"
             tools:ignore="TouchTargetSizeCheck" />
@@ -57,8 +56,8 @@
 
         <AutoCompleteTextView
             android:id="@+id/field2AutoComplete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
             android:background="@drawable/edittext_border"
             android:inputType="none"
             android:hint="@string/branch_prompt" />
@@ -77,7 +76,7 @@
 
         <AutoCompleteTextView
             android:id="@+id/field3AutoComplete"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_border"
             android:inputType="none"

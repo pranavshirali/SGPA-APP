@@ -3,8 +3,8 @@
     <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
         <item name="android:navigationBarColor">@color/theme</item>
         <item name="colorPrimaryVariant">@color/theme</item>
-        <item name="backgroundColor">@color/background</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
         <item name="colorPrimary">@color/theme</item>
         <item name="fontFamily">@font/montserrat</item>
     </style>
