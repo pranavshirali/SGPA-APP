@@ -18,14 +18,12 @@
     <string name="INT49">21INT49</string>
 
     <string-array name="field1_options">
-        <item>Select Scheme</item>
         <item>2018 Scheme</item>
         <item>2021 Scheme</item>
         <item>2022 Scheme</item>
     </string-array>
 
     <string-array name="field2_options">
-        <item>Select Branch</item>
         <item>Aeronautical</item>
         <item>AIML</item>
         <item>Computer Science</item>
@@ -41,7 +39,6 @@
     </string-array>
 
     <string-array name="field3_options">
-        <item>Select Semester</item>
         <item>SEM 1</item>
         <item>SEM 2</item>
         <item>SEM 3</item>
@@ -53,9 +50,9 @@
         <!-- Add more options -->
     </string-array>
 
-    <string name="scheme_prompt">Select Scheme</string>
-    <string name="branch_prompt">Select Branch</string>
-    <string name="semester_prompt">Select Semester</string>
+    <string name="scheme_prompt">Scheme</string>
+    <string name="branch_prompt">Branch</string>
+    <string name="semester_prompt">Semester</string>
 
     <string name="CS41">21MAT41</string>
     <string name="CS42">21**42</string>
