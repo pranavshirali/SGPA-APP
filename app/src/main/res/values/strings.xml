@@ -150,5 +150,8 @@
 
 
     <string name="select">Select Item</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="about_us">About Us</string>
 
 </resources>

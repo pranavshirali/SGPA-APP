@@ -1,6 +1,7 @@
 package com.appleassociates.sgpa;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +11,17 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
+
 public class OptionScreen extends AppCompatActivity implements View.OnClickListener {
 
     AutoCompleteTextView field1AutoCompleteTextView;
     AutoCompleteTextView field2AutoCompleteTextView;
     AutoCompleteTextView field3AutoCompleteTextView;
+
+    //Menu variable
+    DrawerLayout drawer;
+    NavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +31,8 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         field1AutoCompleteTextView = findViewById(R.id.field1AutoComplete);
         field2AutoCompleteTextView = findViewById(R.id.field2AutoComplete);
         field3AutoCompleteTextView = findViewById(R.id.field3AutoComplete);
+        drawer = findViewById(R.id.drawer_layout);
+        navigation = findViewById(R.id.nav_layout);
 
         Button submitButton = findViewById(R.id.submitButton);
         submitButton.setOnClickListener(this);

@@ -1,107 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     tools:context=".OptionScreen"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
     tools:ignore="ExtraText">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="243dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/sgpa"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:ignore="TextSizeCheck"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/leightWhite"
+        android:layout_gravity="start"
+        android:id="@+id/nav_layout"
+        app:menu="@menu/main_menu"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:textColorHint="@color/black"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="2dp"
-        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <AutoCompleteTextView
-            android:id="@+id/field1AutoComplete"
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:importantForAccessibility="no"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="243dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/sgpa"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="@string/scheme_prompt"
-            android:inputType="none"
-            android:textSize="13sp"
-            android:textColor="@color/black"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2dp"
+            >
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/field1AutoComplete"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/scheme_prompt"
+                android:inputType="none"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="2dp"
-        android:textColorHint="@color/black"
-        android:layout_marginTop="25dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <AutoCompleteTextView
-            android:id="@+id/field2AutoComplete"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:inputType="none"
-            android:textSize="13sp"
-            android:textColor="@color/black"
-            android:hint="@string/branch_prompt" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        app:boxBackgroundColor="@color/white"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="2dp"
-        android:textColorHint="@color/black"
-        android:layout_marginTop="25dp">
-
-        <AutoCompleteTextView
-            android:id="@+id/field3AutoComplete"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:textSize="13sp"
-            android:textColor="@color/black"
-            android:hint="@string/semester_prompt" />
+            android:layout_gravity="center_horizontal"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="25dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/field2AutoComplete"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:inputType="none"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:hint="@string/branch_prompt" />
 
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="179dp"
-        android:layout_height="65dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="20dp"
-        style="@style/SubmitButton"
-        android:text= "@string/submit"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-</LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="25dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/field3AutoComplete"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/semester_prompt"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="179dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            style="@style/SubmitButton"
+            android:text= "@string/submit"/>
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
