@@ -139,7 +139,7 @@ public class activity_5eng18 extends AppCompatActivity {
         // Define the credit points for each subject
         int m51Credits = 3;
         int m52Credits = 4;
-        int m44Credits = 3;
+        int m54Credits = 3;
         int m55Credits = 3;
         int m56Credits = 3;
         int m57Credits = 2;
@@ -157,15 +157,15 @@ public class activity_5eng18 extends AppCompatActivity {
         int m51CP = m51Credits * m51Grade;
         int m52CP = m52Credits * m52Grade;
         int m53CP = m53Credits * m53Grade;
-        int m44CP = m44Credits * m44Grade;
+        int m54CP = m54Credits * m44Grade;
         int m55CP = m55Credits * m55Grade;
         int m56CP = m56Credits * m56Grade;
         int m57CP = m56Credits * m57Grade;
         int m58CP = m58Credits * m58Grade;
         int m59CP = m59Credits * m59Grade;
         // Calculate the total credit points and total credits
-        int totalCP = m51CP + m52CP + m53CP + m44CP + m55CP + m56CP + m57CP + m58CP + m59CP ;
-        int totalCredits = m51Credits + m52Credits + m53Credits + m44Credits + m55Credits + m56Credits + m57Credits + m58Credits + m59Credits;
+        int totalCP = m51CP + m52CP + m53CP + m54CP + m55CP + m56CP + m57CP + m58CP + m59CP ;
+        int totalCredits = m51Credits + m52Credits + m53Credits + m54Credits + m55Credits + m56Credits + m57Credits + m58Credits + m59Credits;
 
         // Calculate the SGPA
         return (double) totalCP / totalCredits;
