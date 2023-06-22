@@ -2,20 +2,14 @@ package com.appleassociates.sgpa;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class OptionScreen extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
@@ -25,9 +19,6 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
     AutoCompleteTextView field3AutoCompleteTextView;
 
 
-    //Menu variable
-    DrawerLayout drawer;
-    NavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,20 +28,6 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         field1AutoCompleteTextView = findViewById(R.id.field1AutoComplete);
         field2AutoCompleteTextView = findViewById(R.id.field2AutoComplete);
         field3AutoCompleteTextView = findViewById(R.id.field3AutoComplete);
-
-        //Drawer layout
-        drawer = findViewById(R.id.drawer_layout);
-        navigation = findViewById(R.id.nav_layout);
-        navigation.setNavigationItemSelectedListener(this);
-        Menu menu = navigation.getMenu();
-        menu.add(Menu.NONE, R.id.home, Menu.NONE, R.string.home).setIcon(R.drawable.icons8_home);
-        menu.add(Menu.NONE, R.id.share, Menu.NONE, R.string.share).setIcon(R.drawable.icons8_share);
-        menu.add(Menu.NONE, R.id.aboutus, Menu.NONE, R.string.about_us).setIcon(R.drawable.icons8_about_us);
-        ImageView navigationButton = findViewById(R.id.main_menu);
-        navigationButton.setOnClickListener(v -> {
-            // Open the drawer layout
-            drawer.openDrawer(GravityCompat.START);
-        });
 
 
 

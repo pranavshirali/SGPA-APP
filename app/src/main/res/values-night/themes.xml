@@ -1,7 +1,11 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SGPA" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<resources>
+    <!-- Night application theme. -->
+    <style name="NightMode" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:navigationBarColor">@color/theme</item>
+        <item name="colorPrimaryVariant">@color/theme</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:windowBackground">@color/leightWhite</item>
+        <item name="colorPrimary">@color/theme</item>
+        <item name="fontFamily">@font/montserrat</item>
     </style>
 </resources>

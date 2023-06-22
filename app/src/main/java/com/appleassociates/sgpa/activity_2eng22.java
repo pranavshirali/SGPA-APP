@@ -42,7 +42,7 @@ public class activity_2eng22 extends AppCompatActivity {
         startingTextView = findViewById(R.id.textView);
         Intent intent = getIntent();
         String selectOption = intent.getStringExtra("selectedOption");
-        startingTextView.setText("2018 SCHEME / 2ND SEM / " + getString(R.string.selected_option) + selectOption);
+        startingTextView.setText("2022 SCHEME / 2ND SEM / " + getString(R.string.selected_option) + selectOption);
 
         show4.setOnClickListener(v -> {
             try {

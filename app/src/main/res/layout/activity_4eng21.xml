@@ -14,17 +14,8 @@
 
         <TextView
             android:id="@+id/textView"
-            style="@style/editText"
-            android:layout_width="387dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="start"
-            android:text="@string/selected_option"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold"
+            android:background="@drawable/text_background"
+            style="@style/textview"
             tools:ignore="TextSizeCheck" />
 
         <EditText

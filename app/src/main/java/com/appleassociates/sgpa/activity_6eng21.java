@@ -35,16 +35,16 @@ public class activity_6eng21 extends AppCompatActivity {
         btn66 = findViewById(R.id.editTextNumberDecimal6);
         btn67 = findViewById(R.id.editTextNumberDecimal7);
         btn68 = findViewById(R.id.editTextNumberDecimal8);
-        startingTextView = findViewById(R.id.textView);
         show = findViewById(R.id.button6);
         result6 = findViewById(R.id.resultview6);
 
+
+        startingTextView = findViewById(R.id.textView);
         Intent intent = getIntent();
-        String selectedOption = intent.getStringExtra("selectedOption");
-        startingTextView.setText("2021 SCHEME / 6TH SEM / " + getString(R.string.selected_option) + selectedOption);
+        String selectOption = intent.getStringExtra("selectedOption");
+        startingTextView.setText("2021 SCHEME / 6TH SEM / " + getString(R.string.selected_option) + selectOption);
 
 
-        startingTextView.setText(selectedOption);
         show.setOnClickListener(v -> {
             calculate();
             try {
