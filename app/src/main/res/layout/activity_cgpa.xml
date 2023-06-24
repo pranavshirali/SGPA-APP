@@ -8,121 +8,127 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".activity_6eng21"
+        tools:context=".cgpa_activity"
         tools:ignore="ExtraText">
 
         <TextView
             android:id="@+id/textView"
-            android:background="@drawable/text_background"
-            style="@style/textview"
-            tools:ignore="TextSizeCheck" />
+            android:layout_width="243dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cgpatext"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
             style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub61"
+            android:hint="@string/sem1"
             android:importantForAutofill="no"
             android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal2"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub62"
-            android:minHeight="48dp"
+            android:hint="@string/sem2"
             android:importantForAutofill="no"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal3"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub63"
+            android:hint="@string/sem3"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal4"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub64"
+            android:hint="@string/sem4"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal5"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub65"
+            android:hint="@string/sem5"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal6"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub66"
+            android:hint="@string/sem6"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal7"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub67"
+            android:hint="@string/sem7"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal8"
+            style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:hint="@string/sub68"
+            android:hint="@string/sem8"
             android:importantForAutofill="no"
-            android:minHeight="48dp"
-            style="@style/editText"/>
+            android:minHeight="48dp" />
 
         <!-- End of updated EditText views -->
 
         <Button
             android:id="@+id/button6"
+            style="@style/SubmitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="1dp"
-            android:text="@string/button"
-            style="@style/SubmitButton"/>
+            android:text="@string/button" />
 
         <TextView
             android:id="@+id/resultview6"
-            style="@style/editText"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/edittext_border"
-            android:ems="5"
             android:gravity="center"
             android:hint="@string/total"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            style="@style/editText"/>
 
 
     </LinearLayout>

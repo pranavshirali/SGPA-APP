@@ -1,5 +1,4 @@
 package com.appleassociates.sgpa;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -11,13 +10,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
-
 public class OptionScreen extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     AutoCompleteTextView field1AutoCompleteTextView;
     AutoCompleteTextView field2AutoCompleteTextView;
     AutoCompleteTextView field3AutoCompleteTextView;
-
 
 
     @Override

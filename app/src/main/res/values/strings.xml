@@ -1,4 +1,5 @@
 <resources>
+    <string name="cgpa">Calculate CGPA</string>
     <string name="selected_option"> </string>
     <string name="result">RESULT</string>
     <string name="app_name">SGPA</string>
@@ -11,6 +12,7 @@
     <string name="KBK37">21KBK37/21KSK37/21CIP37</string>
     <string name="CS381">21**38X</string>
     <string name="sgpa">SGPA    CALCULATOR</string>
+    <string name="cgpatext">CGPA    CALCULATOR</string>
     <string name="CS">Compute Science Calculator</string>
     <string name="button">RESULT</string>
     <string name="total">Total</string>
@@ -153,5 +155,14 @@
     <string name="home">Home</string>
     <string name="share">Share</string>
     <string name="about_us">About Us</string>
+
+    <string name="sem1">SEM 1</string>
+    <string name="sem2">SEM 2</string>
+    <string name="sem3">SEM 3</string>
+    <string name="sem4">SEM 4</string>
+    <string name="sem5">SEM 5</string>
+    <string name="sem6">SEM 6</string>
+    <string name="sem7">SEM 7</string>
+    <string name="sem8">SEM 8</string>
 
 </resources>

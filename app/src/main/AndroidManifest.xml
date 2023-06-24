@@ -8,14 +8,17 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
+            android:name=".cgpa_activity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".activity_7itonly18"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".activity_2eng22"
             android:exported="false"
@@ -61,6 +64,11 @@
             android:exported="false"
             android:theme="@style/AppTheme" />
         <activity
+            android:name=".activity_3eng21"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
             android:name=".OptionScreen"
             android:exported="true"
             android:theme="@style/AppTheme">
@@ -69,10 +77,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity_3eng21"
-            android:exported="true"
-            android:theme="@style/AppTheme" />
+
     </application>
 
 </manifest>
