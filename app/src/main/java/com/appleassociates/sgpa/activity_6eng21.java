@@ -1,9 +1,11 @@
 package com.appleassociates.sgpa;
 
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -46,42 +48,88 @@ public class activity_6eng21 extends AppCompatActivity {
 
 
         show.setOnClickListener(v -> {
+            hideKeyboard();
             calculate();
-            try {
+/*            try {
                 if (validateFields()) {
                     hideKeyboard();
                 } else {
                     Toast.makeText(activity_6eng21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 }
+                // Reset text color and hint text color to default black
             }
             catch (NumberFormatException e) {
                 Toast.makeText(activity_6eng21.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
-            }
+            }*/
         });
     }
 
     @SuppressLint("SetTextI18n")
     private void calculate() {
         try {
-            int m61 = Integer.parseInt(btn61.getText().toString());
-            int m62 = Integer.parseInt(btn62.getText().toString());
-            int m63 = Integer.parseInt(btn63.getText().toString());
-            int m64 = Integer.parseInt(btn64.getText().toString());
-            int m65 = Integer.parseInt(btn65.getText().toString());
-            int m66 = Integer.parseInt(btn66.getText().toString());
-            int m67 = Integer.parseInt(btn67.getText().toString());
-            int m68 = Integer.parseInt(btn68.getText().toString());
+            int m61 = 0, m62 = 0, m63 = 0, m64 = 0, m65 = 0, m66 = 0, m67 = 0, m68 = 0;
+            if (!TextUtils.isEmpty(btn61.getText().toString()))
+                m61 = Integer.parseInt(btn61.getText().toString());
 
-            if (m61 >= 0 && m61 <= 100 &&
-                    m62 >= 0 && m62 <= 100 &&
-                    m63 >= 0 && m63 <= 100 &&
-                    m64 >= 0 && m64 <= 100 &&
-                    m65 >= 0 && m65 <= 100 &&
-                    m66 >= 0 && m66 <= 100 &&
-                    m67 >= 0 && m67 <= 100 &&
-                    m68 >= 0 && m68 <= 100) {
+            if (!TextUtils.isEmpty(btn62.getText().toString()))
+                m62 = Integer.parseInt(btn62.getText().toString());
 
-                // Convert marks to grades
+            if (!TextUtils.isEmpty(btn63.getText().toString()))
+                m63 = Integer.parseInt(btn63.getText().toString());
+
+            if (!TextUtils.isEmpty(btn64.getText().toString()))
+                m64 = Integer.parseInt(btn64.getText().toString());
+
+            if (!TextUtils.isEmpty(btn65.getText().toString()))
+                m65 = Integer.parseInt(btn65.getText().toString());
+
+            if (!TextUtils.isEmpty(btn66.getText().toString()))
+                m66 = Integer.parseInt(btn66.getText().toString());
+
+            if (!TextUtils.isEmpty(btn67.getText().toString()))
+                m67 = Integer.parseInt(btn67.getText().toString());
+
+            if (!TextUtils.isEmpty(btn68.getText().toString()))
+                m68 = Integer.parseInt(btn68.getText().toString());
+
+            boolean isValid = true; // Flag to track if all marks are valid
+
+            if (m61 <= 0 || m61 >= 100 || TextUtils.isEmpty(btn61.getText().toString())) {
+                setEditTextError(btn61);
+                isValid = false;
+            }
+            if (m62 <= 0 || m62 >= 100) {
+                setEditTextError(btn62);
+                isValid = false;
+            }
+            if (m63 <= 0 || m63 >= 100) {
+                setEditTextError(btn63);
+                isValid = false;
+            }
+            if (m64 <= 0 || m64 >= 100 || btn64.getText().toString().isEmpty()) {
+                setEditTextError(btn64);
+                isValid = false;
+            }
+            if (m65 <= 0 || m65 >= 100 || btn65.getText().toString().isEmpty()) {
+                setEditTextError(btn65);
+                isValid = false;
+            }
+            if (m66 <= 0 || m66 >= 100 || btn66.getText().toString().isEmpty()) {
+                setEditTextError(btn66);
+                isValid = false;
+            }
+            if (m67 <=0 || m67 >= 100 || btn67.getText().toString().isEmpty()) {
+                setEditTextError(btn67);
+                isValid = false;
+            }
+            if (m68 <= 0 || m68 >= 100 || btn68.getText().toString().isEmpty()) {
+                setEditTextError(btn68);
+                isValid = false;
+            }
+
+            if (isValid) {
+                // All marks are valid, continue with the calculation
+                // ...
                 int m61Grade = getGradeFromMarks(m61);
                 int m62Grade = getGradeFromMarks(m62);
                 int m63Grade = getGradeFromMarks(m63);
@@ -101,11 +149,13 @@ public class activity_6eng21 extends AppCompatActivity {
             } else {
                 Toast.makeText(activity_6eng21.this, "Please enter valid marks (0-100)", Toast.LENGTH_SHORT).show();
             }
+
         } catch (NumberFormatException e) {
             Toast.makeText(activity_6eng21.this, "Please enter valid numeric values", Toast.LENGTH_SHORT).show();
             Log.e("NumberFormatException", e.getMessage());
         }
     }
+
     private int getGradeFromMarks(int marks) {
         int grade;
         // Define the grade ranges and corresponding grades
@@ -136,7 +186,7 @@ public class activity_6eng21 extends AppCompatActivity {
         int m63Credits = 3;
         int m64Credits = 3;
         int m65Credits = 3;
-        int m66Credits = 1;
+        int m66Credits = 2;
         int m67Credits = 2;
         int m68Credits = 3;
 
@@ -170,7 +220,7 @@ public class activity_6eng21 extends AppCompatActivity {
         }
     }
 
-    private boolean validateFields() {
+/*    private boolean validateFields() {
         return !btn61.getText().toString().isEmpty() &&
                 !btn62.getText().toString().isEmpty() &&
                 !btn63.getText().toString().isEmpty() &&
@@ -179,5 +229,12 @@ public class activity_6eng21 extends AppCompatActivity {
                 !btn66.getText().toString().isEmpty() &&
                 !btn67.getText().toString().isEmpty() &&
                 !btn68.getText().toString().isEmpty();
+    }*/
+    private void setEditTextError(EditText editText) {
+       /* editText.setTextColor(getResources().getColor(R.color.red));*/
+        ObjectAnimator animator = ObjectAnimator.ofFloat(editText, "translationX", -20, 20, -20, 20, 0);
+        animator.setDuration(500);
+        animator.start();
     }
+
 }

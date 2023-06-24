@@ -21,7 +21,6 @@
             android:id="@+id/editTextNumberDecimal"
             style="@style/editText"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub61"
             android:importantForAutofill="no"
@@ -30,7 +29,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal2"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub62"
             android:minHeight="48dp"
@@ -40,7 +38,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal3"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub63"
             android:importantForAutofill="no"
@@ -50,7 +47,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal4"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub64"
             android:importantForAutofill="no"
@@ -60,7 +56,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal5"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub65"
             android:importantForAutofill="no"
@@ -70,7 +65,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal6"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub66"
             android:importantForAutofill="no"
@@ -80,7 +74,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal7"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub67"
             android:importantForAutofill="no"
@@ -90,7 +83,6 @@
         <EditText
             android:id="@+id/editTextNumberDecimal8"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/edittext_border"
             android:hint="@string/sub68"
             android:importantForAutofill="no"

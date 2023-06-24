@@ -6,4 +6,5 @@
     <color name="leightWhite">#EDEADE</color>
     <color name="my_light_primary">#fff</color>
     <color name="theme">#212121</color>
+    <color name="red">#FF0000</color>
 </resources>

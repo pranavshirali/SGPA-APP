@@ -1,6 +1,8 @@
 package com.appleassociates.sgpa;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 public class OptionScreen extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
@@ -53,6 +56,27 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
         String option1 = field1AutoCompleteTextView.getText().toString();
         String option2 = field2AutoCompleteTextView.getText().toString();
         String option3 = field3AutoCompleteTextView.getText().toString();
+
+        boolean isField1Empty = option1.isEmpty();
+        boolean isField2Empty = option2.isEmpty();
+        boolean isField3Empty = option3.isEmpty();
+
+        // Shake animation for empty fields
+        if (isField1Empty) {
+            shakeView(field1AutoCompleteTextView);
+        }
+        if (isField2Empty) {
+            shakeView(field2AutoCompleteTextView);
+        }
+        if (isField3Empty) {
+            shakeView(field3AutoCompleteTextView);
+        }
+
+        // Display toast message for empty fields
+        if (isField1Empty || isField2Empty || isField3Empty) {
+            Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         //  LOGIC FOR 3RD SEM 2021 SCHEME
         boolean juniors = option2.equals("Computer Science") || option2.equals("AIML") || option2.equals("IOT") || option2.equals("Information Science") ||
@@ -166,5 +190,10 @@ public class OptionScreen extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
+    }
+    private void shakeView(View view) {
+        ObjectAnimator animator = ObjectAnimator.ofFloat(view, "translationX", -20, 20, -20, 20, -10, 10, -5, 5, 0);
+        animator.setDuration(500);
+        animator.start();
     }
 }
