@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#616161</color>
-    <color name="leightWhite">#EDEADE</color>
-    <color name="my_light_primary">#fff</color>
+    <color name="background">#F0ECE3</color>
+    <color name="leightWhite">#F0ECE3</color>
+    <color name="my_light_primary">#FFFFFF</color> <!-- Update this color value as per your requirement -->
     <color name="theme">#212121</color>
     <color name="red">#FF0000</color>
+    <color name="edittextcolor">#596E79</color>
+    <color name="nav_status">#C7B198</color>
 </resources>

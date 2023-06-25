@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,11 +12,16 @@
         tools:context=".activity_6eng21"
         tools:ignore="ExtraText">
 
-        <TextView
+
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/textView"
-            android:background="@drawable/text_background"
-            style="@style/textview"
-            tools:ignore="TextSizeCheck" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nav_status"
+            android:layout_marginBottom="10dp"
+            />
+
+
 
         <EditText
             android:id="@+id/editTextNumberDecimal"
@@ -103,7 +109,7 @@
         <TextView
             android:id="@+id/resultview6"
             style="@style/editText"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"

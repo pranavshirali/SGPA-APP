@@ -13,14 +13,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.text.DecimalFormat;
 
 public class activity_6eng21 extends AppCompatActivity {
 
     EditText btn61 ,btn62, btn63, btn64, btn65, btn66, btn67, btn68;
-    TextView result6, startingTextView;
+    TextView result6;
+
+    Toolbar startingTextView;
     Button show;
     @SuppressLint("SetTextI18n")
     @Override
@@ -42,9 +46,11 @@ public class activity_6eng21 extends AppCompatActivity {
 
 
         startingTextView = findViewById(R.id.textView);
+        startingTextView.setTitleTextAppearance(this, R.style.ToolbarTitleTextAppearance);
+        startingTextView.setTitleTextColor(getResources().getColor(R.color.black));
         Intent intent = getIntent();
         String selectOption = intent.getStringExtra("selectedOption");
-        startingTextView.setText("2021 SCHEME / 6TH SEM / " + getString(R.string.selected_option) + selectOption);
+        startingTextView.setTitle("2021 SCHEME / 7TH SEM / " + getString(R.string.selected_option) + selectOption);
 
 
         show.setOnClickListener(v -> {
@@ -151,7 +157,6 @@ public class activity_6eng21 extends AppCompatActivity {
             }
 
         } catch (NumberFormatException e) {
-            Toast.makeText(activity_6eng21.this, "Please enter valid numeric values", Toast.LENGTH_SHORT).show();
             Log.e("NumberFormatException", e.getMessage());
         }
     }
@@ -211,10 +216,8 @@ public class activity_6eng21 extends AppCompatActivity {
     private void hideKeyboard() {
         View view = this.getCurrentFocus();
         if (view != null) {
-            InputMethodManager imm = null;
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-                imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            }
+            InputMethodManager imm;
+            imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             assert imm != null;
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
@@ -232,6 +235,7 @@ public class activity_6eng21 extends AppCompatActivity {
     }*/
     private void setEditTextError(EditText editText) {
        /* editText.setTextColor(getResources().getColor(R.color.red));*/
+        Toast.makeText(activity_6eng21.this, "Please enter this feild", Toast.LENGTH_SHORT).show();
         ObjectAnimator animator = ObjectAnimator.ofFloat(editText, "translationX", -20, 20, -20, 20, 0);
         animator.setDuration(500);
         animator.start();
