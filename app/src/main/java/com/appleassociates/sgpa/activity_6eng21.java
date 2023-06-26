@@ -1,5 +1,4 @@
 package com.appleassociates.sgpa;
-
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,11 +10,13 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import java.text.DecimalFormat;
 
@@ -23,9 +24,9 @@ public class activity_6eng21 extends AppCompatActivity {
 
     EditText btn61 ,btn62, btn63, btn64, btn65, btn66, btn67, btn68;
     TextView result6;
-
     Toolbar startingTextView;
     Button show;
+    ImageView deleteIcon;
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +44,30 @@ public class activity_6eng21 extends AppCompatActivity {
         btn68 = findViewById(R.id.editTextNumberDecimal8);
         show = findViewById(R.id.button6);
         result6 = findViewById(R.id.resultview6);
-
+        deleteIcon = findViewById(R.id.deleteicon);
 
         startingTextView = findViewById(R.id.textView);
         startingTextView.setTitleTextAppearance(this, R.style.ToolbarTitleTextAppearance);
-        startingTextView.setTitleTextColor(getResources().getColor(R.color.black));
+        startingTextView.setTitleTextColor(ContextCompat.getColor(startingTextView.getContext(), R.color.white));
         Intent intent = getIntent();
         String selectOption = intent.getStringExtra("selectedOption");
         startingTextView.setTitle("2021 SCHEME / 7TH SEM / " + getString(R.string.selected_option) + selectOption);
-
+        deleteIcon.setOnClickListener(v -> {
+            btn61.setText("");
+            btn62.setText("");
+            btn63.setText("");
+            btn64.setText("");
+            btn65.setText("");
+            btn66.setText("");
+            btn67.setText("");
+            btn68.setText("");
+            result6.setText("");
+        });
 
         show.setOnClickListener(v -> {
             hideKeyboard();
             calculate();
-/*            try {
+/*        try {
                 if (validateFields()) {
                     hideKeyboard();
                 } else {
@@ -100,35 +111,35 @@ public class activity_6eng21 extends AppCompatActivity {
 
             boolean isValid = true; // Flag to track if all marks are valid
 
-            if (m61 <= 0 || m61 >= 100 || TextUtils.isEmpty(btn61.getText().toString())) {
+            if (m61 < 0 || m61 > 100 || TextUtils.isEmpty(btn61.getText().toString())) {
                 setEditTextError(btn61);
                 isValid = false;
             }
-            if (m62 <= 0 || m62 >= 100) {
+            if (m62 < 0 || m62 > 100 || TextUtils.isEmpty(btn62.getText().toString())) {
                 setEditTextError(btn62);
                 isValid = false;
             }
-            if (m63 <= 0 || m63 >= 100) {
+            if (m63 < 0 || m63 > 100 || TextUtils.isEmpty(btn63.getText().toString())) {
                 setEditTextError(btn63);
                 isValid = false;
             }
-            if (m64 <= 0 || m64 >= 100 || btn64.getText().toString().isEmpty()) {
+            if (m64 < 0 || m64 > 100 || btn64.getText().toString().isEmpty()) {
                 setEditTextError(btn64);
                 isValid = false;
             }
-            if (m65 <= 0 || m65 >= 100 || btn65.getText().toString().isEmpty()) {
+            if (m65 < 0 || m65 > 100 || btn65.getText().toString().isEmpty()) {
                 setEditTextError(btn65);
                 isValid = false;
             }
-            if (m66 <= 0 || m66 >= 100 || btn66.getText().toString().isEmpty()) {
+            if (m66 < 0 || m66 > 100 || btn66.getText().toString().isEmpty()) {
                 setEditTextError(btn66);
                 isValid = false;
             }
-            if (m67 <=0 || m67 >= 100 || btn67.getText().toString().isEmpty()) {
+            if (m67 < 0 || m67 > 100 || btn67.getText().toString().isEmpty()) {
                 setEditTextError(btn67);
                 isValid = false;
             }
-            if (m68 <= 0 || m68 >= 100 || btn68.getText().toString().isEmpty()) {
+            if (m68 < 0 || m68 > 100 || btn68.getText().toString().isEmpty()) {
                 setEditTextError(btn68);
                 isValid = false;
             }
@@ -223,19 +234,18 @@ public class activity_6eng21 extends AppCompatActivity {
         }
     }
 
-/*    private boolean validateFields() {
-        return !btn61.getText().toString().isEmpty() &&
-                !btn62.getText().toString().isEmpty() &&
-                !btn63.getText().toString().isEmpty() &&
-                !btn64.getText().toString().isEmpty() &&
-                !btn65.getText().toString().isEmpty() &&
-                !btn66.getText().toString().isEmpty() &&
-                !btn67.getText().toString().isEmpty() &&
-                !btn68.getText().toString().isEmpty();
-    }*/
+    /*    private boolean validateFields() {
+            return !btn61.getText().toString().isEmpty() &&
+                    !btn62.getText().toString().isEmpty() &&
+                    !btn63.getText().toString().isEmpty() &&
+                    !btn64.getText().toString().isEmpty() &&
+                    !btn65.getText().toString().isEmpty() &&
+                    !btn66.getText().toString().isEmpty() &&
+                    !btn67.getText().toString().isEmpty() &&
+                    !btn68.getText().toString().isEmpty();
+        }*/
     private void setEditTextError(EditText editText) {
-       /* editText.setTextColor(getResources().getColor(R.color.red));*/
-        Toast.makeText(activity_6eng21.this, "Please enter this feild", Toast.LENGTH_SHORT).show();
+        /* editText.setTextColor(getResources().getColor(R.color.red));*/
         ObjectAnimator animator = ObjectAnimator.ofFloat(editText, "translationX", -20, 20, -20, 20, 0);
         animator.setDuration(500);
         animator.start();

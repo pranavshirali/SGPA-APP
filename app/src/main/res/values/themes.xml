@@ -1,10 +1,10 @@
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
-        <item name="android:navigationBarColor">@color/nav_status</item>
-        <item name="colorPrimaryVariant">@color/nav_status</item>
-        <item name="android:statusBarColor">@color/nav_status</item>
-        <item name="android:windowBackground">@color/leightWhite</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
         <item name="colorPrimary">@color/theme</item>
         <item name="fontFamily">@font/montserrat</item>
 
